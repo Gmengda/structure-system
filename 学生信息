@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+struct stu
+{
+	char N[10];
+	int age;
+	char number[15];
+	char X[5];
+};
+
+int main()
+{
+	struct stu m;
+	struct stu n = {"李强",20,"123123123","男"};
+	scanf("%s",&m.N);
+	scanf("%d",&m.age);
+	printf("%s,%d\n",m.N,m.age);
+	printf("%s,%d\n",n.N,n.age);
+	return 0;
+}
